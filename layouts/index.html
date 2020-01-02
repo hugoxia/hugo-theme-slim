@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     {{ partial "header.html" . }}
-    <div>
+    <!-- <div>
       <script>
         (function () {
           var cx = '018032815047088784617:-xvbunbk9dk';
@@ -26,7 +26,7 @@
         })();
       </script>
       <gcse:search></gcse:search>
-    </div>
+    </div> -->
     <div class="content">
       <div class="posts">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }} {{ range $paginator.Pages }}
