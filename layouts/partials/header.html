@@ -8,17 +8,17 @@
     <ul class="nav-list">
       {{ range .Site.Menus.main }}
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{end}} 
-	  <li class="spacer">&ac;</li>
-{{ with .Site.Params.GithubID }}
+      {{end}}
+      <li class="spacer">&ac;</li>
+      {{ with .Site.Params.GithubID }}
       <li><a href="https://github.com/{{.}}">Github</a></li>{{ end }} {{ with .Site.Params.TwitterID }}
       <li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }} {{ with .Site.Params.LinkedInID }}
       <li><a href="http://linkedin.com/in/{{.}}">LinkedIn</a></li>{{ end }}
       <li><a href="/index.xml">RSS</a>
     </ul>
   </div>
-  <div class="nav-search">
+  <!-- <div class="nav-search">
     <input id="search-input" type="text" placeholder="Search..." name="search">
     <section id="search-results" class="search"></section>
-</div>
+  </div> -->
 </div>
